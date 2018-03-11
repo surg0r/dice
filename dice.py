@@ -35,7 +35,7 @@ class Mnemonic():
                 return False
             rolls.append(roll-1)
         word = self.r_to_int(rolls)
-        print 'word_int lookup', word
+        #print 'word_int lookup', word
         return word
 
     def r_to_int(self, rolls):
@@ -67,3 +67,11 @@ class Mnemonic():
             mnemonic.append(self.int_to_word(w))
         self.mnemonic = mnemonic
         return self.mnemonic
+
+#generate a qrl mnemonic using a dice
+
+def gen_mnemonic():
+    print 'Enter the number of sides of the dice:'
+    m = Mnemonic(sides=int(raw_input()))
+    print m.rolls_to_mnemonic()
+
