@@ -75,3 +75,6 @@ def gen_mnemonic():
     m = Mnemonic(sides=int(raw_input()))
     print m.rolls_to_mnemonic()
 
+if __name__ == '__main__':
+    print 'QRL mnemonic phrase dice generator...'
+    gen_mnemonic()
