@@ -8,3 +8,6 @@ The functions work for any sided dice, but I would recommend a polyhedral dice (
 
 For the QRL mnemonic (34 words, 12 bits per word, 408 bits required) this translates to 68 dice rolls to complete a mnemonic phrase.
 
+Usage: 
+    python dice.py
+    
