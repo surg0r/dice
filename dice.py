@@ -113,7 +113,8 @@ class Mnemonic():
                 return
             mnemonic.append(self.int_to_word(w))
         self.mnemonic = mnemonic
-        return self.mnemonic
+        return ' '.join(self.mnemonic)
+
 
 #generate a qrl mnemonic using a dice
 
@@ -124,7 +125,7 @@ def gen_mnemonic():
     th=tree_height(int(raw_input()))
     print 'Enter the number of sides of the dice:'
     m = Mnemonic(sides=int(raw_input()), hashfunction=hashf,treeheight=th)
-    print m.rolls_to_mnemonic()
+    print 'QRL mnemonic phrase: ' + m.rolls_to_mnemonic()
 
 if __name__ == '__main__':
     print 'QRL mnemonic phrase dice generator...'
