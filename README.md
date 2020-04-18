@@ -6,7 +6,7 @@ For those who are completely paranoid about random number generation, it is poss
 
 The functions work for any sided dice, but I would recommend a polyhedral dice (e.g. 100 sided) which allows 6 bits of entropy per roll to be harvested.
 
-For the QRL mnemonic (34 words, 12 bits per word, 408 bits required) this translates to 68 dice rolls to complete a mnemonic phrase.
+For the QRL mnemonic (34 words, first 2 words (24 bits) are the extended seed descriptor, 32x12 bits per word thereafter, 408 bits required in total) this translates to 64 dice rolls to complete a mnemonic phrase.
 
 Usage: 
     python dice.py
